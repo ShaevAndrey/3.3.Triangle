@@ -1,6 +1,12 @@
 
 package ru.job4j.condition;
 
+/**
+ * Class Triangle 3.3. определение площади треугольника.
+ * @author Shaev Andrey.
+ * @version 1.01.
+ * @since 18.11.17.
+*/
 public class Triangle {
    
    private Point a ;
@@ -43,9 +49,8 @@ public double distance(Point left, Point right) {
 * @return Перимент.
 */
 public double period(double ab, double ac, double bc) {
-
     return (ab + ac + bc)/2;
-}
+    }
 
 /**
 * Метод должен вычислить прощадь треугольканива.
@@ -68,7 +73,7 @@ public double area() {
         // написать формулу для расчета площади треугольника.
         //rsl = ...
 		rsl= Math.sqrt(p*(p-ab)*(p-ac)*(p-bc));
-   }
+    }
     return rsl;
 }
 
@@ -83,7 +88,6 @@ public double area() {
 * @return
 */
 private boolean exist(double ab, double ac, double bc) {
-
-    return (ab+ac)>bc && (ab+bc)> ac && (bc+ac)>ab ? true:false;
-}
+    return (ab+ac)>bc && (ab+bc)> ac && (bc+ac)>ab;
+    }
 }

@@ -1,10 +1,18 @@
-package ru.job4j.condition;
+﻿package ru.job4j.condition;
 
 import org.junit.Test;
 import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.*;
-
+/**
+ * Class TriangleTest 3.3. Тест программы нахождения площади треугольника.
+ * @author Shaev Andrey
+ * @version 1.01
+ * @since 18.11.17
+*/
 public class TriangleTest {
+ /**
+ * Тест нахождения площади треугольника.
+ */
  @Test
  public void whenAreaSetThreePointsThenTriangleArea() {
  // создаем три объекта класса Point.
@@ -20,7 +28,9 @@ public class TriangleTest {
  //Проверяем результат и ожидаемое значение.
  assertThat(result, closeTo(expected, 0.1));
  }
- 
+ /**
+ * Тест нахождения длинны отрезка по координатам.
+ */
  @Test
  public void whenDistanceDiffPointsThen10() {
  // создаем два объекта класса Point.
